@@ -47,7 +47,7 @@ require_once "db.php";
     <link href="../css/main.css" rel="stylesheet">
     <!-- <link href="../css/bootstrap/sign-in/signin.css" rel="stylesheet"> -->
   </head>
-  <body>
+  <body >
     
 <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
   <symbol id="bootstrap" viewBox="0 0 118 94">
@@ -172,16 +172,6 @@ if (isset($_REQUEST['submit-login-info'])) {
   </form>
 
     </main>
-
-
-<!-- 
-    <form method="post"  action="includes/login.php"> 
-	<label for="text-input">Login Form</label>
-	<input type="email" name="i-email">
-	<input type="password" name="i-password">
-	<input type="submit" id="text-submit" name="submit-login-info" value="Log in">
-</form> -->
-
 
 
 <?php

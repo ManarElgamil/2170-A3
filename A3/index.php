@@ -106,27 +106,6 @@ if (!(isset($_SESSION['loggedin']) && $_SESSION['loggedin'] == true)) {
 				$sql2 = "INSERT INTO `cb_reported_posts` VALUES ( '{$postID}', '{$userID}', 'reported' )";
 				$result = $db->query($sql2);
 			}
-?>
-
-<!-- so we need to add this in a cute way to the data that we are sending, to make it look cute -->
-
-<!-- 
-<div class="card">
-  <div class="card-header">
-    Featured
-  </div>
-  <div class="card-body">
-    <h5 class="card-title">Special title treatment</h5>
-    <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-    <a href="#" class="btn btn-primary">Go somewhere</a>
-  </div>
-  <div class="card-footer text-muted">
-    2 days ago
-  </div>
-</div> -->
-
-
-<?php
 
 	}
 	//if the user was suspended
@@ -134,8 +113,6 @@ if (!(isset($_SESSION['loggedin']) && $_SESSION['loggedin'] == true)) {
 		echo "<h4> Your account is suspended until further notice. </h4>";
 	}
 
-
-	//over here we process the form
 ?>
 
 <!-- here we need to display the content -->

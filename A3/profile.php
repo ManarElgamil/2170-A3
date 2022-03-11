@@ -4,28 +4,24 @@
 	require_once "includes/header.php";
 ?>
 
-
 <main id="pg-main-content" class="container-fluid">
 
-
-
-
 	<div class="row my-background">
+
+	<div class="col-sm-8 mx-auto background pt-5">
 
 	<?php
 	
 		if ($_SESSION['suspended'] == true){
 
-			echo "<h4> Your account is suspended until further notice. </h4>";
+			echo "<h3> Your account is suspended until further notice. </h4>";
 		}
 	
 	?>
 
-	<div class="col-sm-8 mx-auto background pt-5">
+	<h4 class="pt-5" > For updating any of your fields just change: the new email or first name or last name, and press submit, without changing any of the other fields, that you do not wish to be changed</h4>
 
-	<h4 class= "pt-5" > For updating any of your fields just change: the new email or first name or last name, and press submit, without changing any of the other fields, that you do not wish to be changed</h4>
-
-	<img src="img/user-profile.png" alt="User Image" width="150" height="150">
+	<img  src="img/user-profile.png" alt="User Image" width="150" height="150">
 
 <form method="post" action="profile.php">
   <div class="form-row">
@@ -105,25 +101,8 @@ if (isset($_REQUEST['update'])){
 	$_SESSION['firstname'] = $fname;
 	$_SESSION['lastname'] = $lname;
 
-	/*
-
-	1. check which fields are actually set using if else statments, aka (if email, not equal to the session variable then.. execute an update statement) [done]
-
-	2. don't forget to update the session variable as well [Done]
-
-	3. then after you do this we will check the part of deleting the user account, and make sure that it is deleted from all the tables in the database, (aka from login, all their posts are deleted all if they had reported posts those are deleted too, etc, and finally we will need to redirect them to logout.php to delete the session (because we don't need to do so on our own))
-
-	/////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-
-	-- Everything seems to be working fine, but there seems to be a glitch when updating everything, I think it will go away when we implement the asynchronous communication
-
-	*/
-
-	//next we work on deleting the user from all the tables
-
 }
 ?>
-
 
 <?php
 require_once "includes/footer.php";

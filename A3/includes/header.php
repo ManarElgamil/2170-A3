@@ -63,7 +63,8 @@ else {
     </style>
 
 <link href="../css/bootstrap/footers/footers.css" rel="stylesheet">
-    <link href="../css/bootstrap/headers/headers.css" rel="stylesheet">
+<link href="../css/bootstrap/headers/headers.css" rel="stylesheet">
+<link href="../css/main.css" rel="stylesheet">
   
 
 
@@ -94,7 +95,8 @@ else {
     </style>
 
 <link href="css/bootstrap/footers/footers.css" rel="stylesheet">
-    <link href="css/bootstrap/headers/headers.css" rel="stylesheet">
+<link href="css/bootstrap/headers/headers.css" rel="stylesheet">
+<link href="css/main.css" rel="stylesheet">
   
 
     <?php
